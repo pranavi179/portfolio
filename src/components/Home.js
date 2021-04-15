@@ -12,10 +12,11 @@ export const Home = () => {
 					width='100%'
 				/>
 				<section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8  '>
-					<h1 className=' text-red-100 font-bold cursive leading-none lg-leading-snug  home-name'>
+					<h1 className=' text-red-100  cursive leading-none lg-leading-snug  home-name'>
 						Hey Species!
 						<br />
-						Pranavi here!{' '}
+						<strong className='text-red-600'>Pranavi </strong>
+						here!
 					</h1>
 				</section>
 			</main>{' '}
