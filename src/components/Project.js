@@ -17,7 +17,7 @@ export const Project = () => {
 	}, []);
 	return (
 		<div>
-			<main className='bg-green-100 min-h-screen p-12'>
+			<main className='bg-white-100 min-h-screen p-12'>
 				<section className='container mx-auto'>
 					<h1 className='text-5xl flex justify-center cursive'>Project Page</h1>
 					<h2 className='text-lg text-gray-600 flex justify-center mb-12'>
@@ -26,8 +26,8 @@ export const Project = () => {
 					<section className='grid grid-cols-2 gap-8'>
 						{projectData &&
 							projectData.map((project, index) => (
-								<article className='relative rounded-lg shadow-xl bg-white p-16'>
-									<h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
+								<article className='relative rounded-lg bg-purple-100 shadow-xl bg-white p-16'>
+									<h3 className='text-gray-800 text-4xl font-bold mb-2 hover:text-red-700'>
 										<a
 											href={project.link}
 											alt={project.title}
@@ -37,7 +37,7 @@ export const Project = () => {
 											{project.title}
 										</a>
 									</h3>
-									<div className='text-gray-500 text-xs space-x-4'>
+									<div className='text-gray-500 text-s space-x-4'>
 										<span>
 											<strong className='font-bold'>Finished On </strong>:{' '}
 											{new Date(project.date).toLocaleDateString()}

@@ -25,7 +25,7 @@ export const Post = () => {
 
 	return (
 		<div>
-			<main className='bg-green-100 min-h-screen p-12'>
+			<main className='bg-white-100 min-h-screen p-12'>
 				<section className='container mx-auto'>
 					<h1 className='text-5xl flex justify-center cursive'>
 						Blog Post Page

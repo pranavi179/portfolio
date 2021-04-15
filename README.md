@@ -1,3 +1,16 @@
+# My Portfolio
+
+Click on this link [Portfolio](https://pranaviportfolio.netlify.app/)
+
+languages Used :
+React
+
+used Sanity for content
+[sanity](https://www.sanity.io/)
+
+for css - tailwind Css
+icons- material icons and react-social-icons
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
