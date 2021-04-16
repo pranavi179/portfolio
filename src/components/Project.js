@@ -23,7 +23,7 @@ export const Project = () => {
 					<h2 className='text-lg text-gray-600 flex justify-center mb-12'>
 						Welcome to my page of Projects posts
 					</h2>
-					<section className='grid grid-cols-2 gap-8'>
+					<section className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 						{projectData &&
 							projectData.map((project, index) => (
 								<article className='relative rounded-lg bg-purple-100 shadow-xl bg-white p-16'>
@@ -37,7 +37,7 @@ export const Project = () => {
 											{project.title}
 										</a>
 									</h3>
-									<div className='text-gray-500 text-s space-x-4'>
+									<div className='text-gray-500 text-xs space-x-2'>
 										<span>
 											<strong className='font-bold'>Finished On </strong>:{' '}
 											{new Date(project.date).toLocaleDateString()}
