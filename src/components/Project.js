@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../client';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 export const Project = () => {
 	const [projectData, setProjectData] = useState(null);
 	useEffect(() => {

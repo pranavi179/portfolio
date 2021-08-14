@@ -4,6 +4,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
 
 import landscape from '../assets/wall.jpg';
+import bimage from '../assets/bimage.jpg';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -29,8 +30,8 @@ export const About = () => {
 		<div>
 			<main className='relative'>
 				<img
-					src={landscape}
-					alt='purple image'
+					src={bimage}
+					alt='purple pic'
 					className='absolute   w-full '
 				/>
 				<div className='p-10 lg:pt-48 container mx-auto relative'>
@@ -44,7 +45,7 @@ export const About = () => {
 							<h1 className='cursive text-6xl text-100 mb-4 '>
 								I am <span className='text-white-100'>{author.name} </span>
 							</h1>
-							<div className='prose lg:prose-xl text-black font-bold text-4xl '>
+							<div className='prose lg:prose-xl text-black  text-2xl '>
 								{' '}
 								<BlockContent
 									blocks={author.bio}

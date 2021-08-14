@@ -11,21 +11,21 @@ export const NavBar = () => {
 							to='/'
 							exact
 							activeClassName='text-white'
-							className='inflex-flex items-center py-9 px-1 mr-2 text-purple-800 hover:text-black-800 text-3xl  font-bold cursive tracking-widest '
+							className='inflex-flex items-center py-9 px-5 mr-2 text-purple-800 hover:text-black-800 text-3xl  font-bold cursive tracking-widest '
 						>
 							Pranavi
 						</NavLink>
 						<NavLink
 							to='/post'
 							activeClassName='text-white-100 bg-purple-100'
-							className='inflex-flex items-center py-3 px-2 my-6 rounded text-red-700 hover:text-green-800 text-2xl '
+							className='inflex-flex items-center py-3 px-4 my-6 rounded text-red-700 hover:text-green-800 text-2xl '
 						>
 							Post
 						</NavLink>
 						<NavLink
 							to='/project'
 							activeClassName='text-white-100 bg-purple-100'
-							className='inflex-flex items-center py-3 px-2 my-6 rounded text-red-700 hover:text-green-800 text-2xl '
+							className='inflex-flex items-center py-3 px-5 my-6 rounded text-red-700 hover:text-green-800 text-2xl '
 						>
 							Project
 						</NavLink>
