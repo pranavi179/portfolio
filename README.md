@@ -1,6 +1,6 @@
 # My Portfolio
 
-Click on this link [Portfolio](https://pranaviportfolio.netlify.app/)
+Click on this link [Portfolio](https://pranavi.netlify.app/)
 
 languages Used :
 React
