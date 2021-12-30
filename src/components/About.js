@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client';
 import BlockContent from '@sanity/block-content-to-react';
 import imageUrlBuilder from '@sanity/image-url';
-
-import landscape from '../assets/wall.jpg';
 import bimage from '../assets/bimage.jpg';
 
 const builder = imageUrlBuilder(sanityClient);
@@ -43,7 +41,7 @@ export const About = () => {
 						/>
 						<div className='text-lg flex flex-col justify-center'>
 							<h1 className='cursive text-6xl text-100 mb-4 '>
-								I am <span className='text-white-100'>{author.name} </span>
+								Hi! <br /> I am <span className='text-white-100'>{author.name} </span>
 							</h1>
 							<div className='prose lg:prose-xl text-black  text-2xl '>
 								{' '}

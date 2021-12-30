@@ -7,7 +7,7 @@ export const Post = () => {
 	useEffect(() => {
 		sanityClient
 			.fetch(
-				`*[_type=="post"]{
+				`*[_type =="post"]{
 			title,
 			slug,
 			mainImage{
@@ -19,9 +19,29 @@ export const Post = () => {
 			}
 		}`
 			)
-			.then((data) => setPost(data))
+			.then((data) => {
+				console.log('asdfadsf', data)
+				setPost(data)})
 			.catch(console.error);
 	}, []);
+	// useEffect(() => {
+	// 	sanityClient
+	// 		.fetch(
+	// 			`*[_type =="post"]{
+	// 		title,
+	// 		slug,
+	// 		mainImage{
+	// 			asset->{
+	// 				_id,
+	// 				url
+	// 			},
+	// 			alt
+	// 		}
+	// 	}`
+	// 		)
+	// 		.then((data) => setPost(data))
+	// 		.catch(console.error);
+	// }, []);
 
 	return (
 		<div>
@@ -45,11 +65,13 @@ export const Post = () => {
 											className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'
 											key={index}
 										>
+											{post.mainImage && 
 											<img
-												src={post.mainImage.asset.url}
-												alt={post.mainImage.alt}
-												className='w-full h-full rouded-r object-cover absolute'
+											src={post.mainImage.asset.url}
+											alt={post.title}
+											className='w-full h-full rouded-r object-cover absolute'
 											/>
+										}
 											<span className='block relative h-full flex justify-end items-end pr-4 pb-4'>
 												<h3 className='text-gray-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded '>
 													{post.title}
